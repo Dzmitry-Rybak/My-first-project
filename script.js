@@ -3,10 +3,10 @@
 let numberOfFilms;
 
 function start() {
-    numberOfFilms = +prompt('Проверка редактирования. Сколько фильмов вы уже посмотрели?', '');
+    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) { 
         //null - проверяет не нажал ли ОТМЕНА, isNaN (is not a number) - прворяет является ли то что ввел числом.
-        numberOfFilms = +prompt('Проверка редактирования. Сколько фильмов вы уже посмотрели?', '');
+        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     }
 }
 start();
